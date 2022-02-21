@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		3B66276A27C3C3D4006F1146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66276927C3C3D4006F1146 /* AppDelegate.swift */; };
 		3B66276C27C3C3D4006F1146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66276B27C3C3D4006F1146 /* SceneDelegate.swift */; };
-		3B66276E27C3C3D4006F1146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66276D27C3C3D4006F1146 /* ViewController.swift */; };
 		3B66277127C3C3D4006F1146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B66276F27C3C3D4006F1146 /* Main.storyboard */; };
 		3B66277427C3C3D4006F1146 /* RestAPI_Refresher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B66277227C3C3D4006F1146 /* RestAPI_Refresher.xcdatamodeld */; };
 		3B66277627C3C3D9006F1146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B66277527C3C3D9006F1146 /* Assets.xcassets */; };
 		3B66277927C3C3D9006F1146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B66277727C3C3D9006F1146 /* LaunchScreen.storyboard */; };
-		3B66278427C3C3DA006F1146 /* RestAPI_RefresherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66278327C3C3DA006F1146 /* RestAPI_RefresherTests.swift */; };
+		3B66278427C3C3DA006F1146 /* PokiControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66278327C3C3DA006F1146 /* PokiControllerTests.swift */; };
 		3B66278E27C3C3DA006F1146 /* RestAPI_RefresherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66278D27C3C3DA006F1146 /* RestAPI_RefresherUITests.swift */; };
 		3B66279027C3C3DA006F1146 /* RestAPI_RefresherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66278F27C3C3DA006F1146 /* RestAPI_RefresherUITestsLaunchTests.swift */; };
+		3B66279D27C3D5BA006F1146 /* PokiModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66279C27C3D5BA006F1146 /* PokiModelTests.swift */; };
+		3B66279F27C3D5F8006F1146 /* PokiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66279E27C3D5F8006F1146 /* PokiModel.swift */; };
+		3B6627A127C3D86D006F1146 /* PokiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6627A027C3D86D006F1146 /* PokiController.swift */; };
+		3B6627A327C3D8DC006F1146 /* PokiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6627A227C3D8DC006F1146 /* PokiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +43,20 @@
 		3B66276627C3C3D4006F1146 /* RestAPI-Refresher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RestAPI-Refresher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B66276927C3C3D4006F1146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B66276B27C3C3D4006F1146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B66276D27C3C3D4006F1146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B66277027C3C3D4006F1146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B66277327C3C3D4006F1146 /* RestAPI_Refresher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestAPI_Refresher.xcdatamodel; sourceTree = "<group>"; };
 		3B66277527C3C3D9006F1146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B66277827C3C3D9006F1146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B66277A27C3C3D9006F1146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B66277F27C3C3DA006F1146 /* RestAPI-RefresherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RestAPI-RefresherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B66278327C3C3DA006F1146 /* RestAPI_RefresherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI_RefresherTests.swift; sourceTree = "<group>"; };
+		3B66278327C3C3DA006F1146 /* PokiControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokiControllerTests.swift; sourceTree = "<group>"; };
 		3B66278927C3C3DA006F1146 /* RestAPI-RefresherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RestAPI-RefresherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B66278D27C3C3DA006F1146 /* RestAPI_RefresherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI_RefresherUITests.swift; sourceTree = "<group>"; };
 		3B66278F27C3C3DA006F1146 /* RestAPI_RefresherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI_RefresherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B66279C27C3D5BA006F1146 /* PokiModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokiModelTests.swift; sourceTree = "<group>"; };
+		3B66279E27C3D5F8006F1146 /* PokiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokiModel.swift; sourceTree = "<group>"; };
+		3B6627A027C3D86D006F1146 /* PokiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokiController.swift; sourceTree = "<group>"; };
+		3B6627A227C3D8DC006F1146 /* PokiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,9 @@
 			children = (
 				3B66276927C3C3D4006F1146 /* AppDelegate.swift */,
 				3B66276B27C3C3D4006F1146 /* SceneDelegate.swift */,
-				3B66276D27C3C3D4006F1146 /* ViewController.swift */,
+				3B66279E27C3D5F8006F1146 /* PokiModel.swift */,
+				3B6627A227C3D8DC006F1146 /* PokiViewController.swift */,
+				3B6627A027C3D86D006F1146 /* PokiController.swift */,
 				3B66276F27C3C3D4006F1146 /* Main.storyboard */,
 				3B66277527C3C3D9006F1146 /* Assets.xcassets */,
 				3B66277727C3C3D9006F1146 /* LaunchScreen.storyboard */,
@@ -116,7 +124,8 @@
 		3B66278227C3C3DA006F1146 /* RestAPI-RefresherTests */ = {
 			isa = PBXGroup;
 			children = (
-				3B66278327C3C3DA006F1146 /* RestAPI_RefresherTests.swift */,
+				3B66278327C3C3DA006F1146 /* PokiControllerTests.swift */,
+				3B66279C27C3D5BA006F1146 /* PokiModelTests.swift */,
 			);
 			path = "RestAPI-RefresherTests";
 			sourceTree = "<group>";
@@ -261,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B66276E27C3C3D4006F1146 /* ViewController.swift in Sources */,
 				3B66276A27C3C3D4006F1146 /* AppDelegate.swift in Sources */,
 				3B66276C27C3C3D4006F1146 /* SceneDelegate.swift in Sources */,
+				3B66279F27C3D5F8006F1146 /* PokiModel.swift in Sources */,
+				3B6627A327C3D8DC006F1146 /* PokiViewController.swift in Sources */,
+				3B6627A127C3D86D006F1146 /* PokiController.swift in Sources */,
 				3B66277427C3C3D4006F1146 /* RestAPI_Refresher.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B66278427C3C3DA006F1146 /* RestAPI_RefresherTests.swift in Sources */,
+				3B66279D27C3D5BA006F1146 /* PokiModelTests.swift in Sources */,
+				3B66278427C3C3DA006F1146 /* PokiControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
