@@ -51,7 +51,6 @@ class PokiControllerTests: XCTestCase {
     
     func testControllerFetchesPokemonAndAddsItToArray(){
         sut.fetchPokemonBy(id: 25) { pokemon in
-            //cool
             if let pokemon = pokemon {
                 self.sut.pokemons.append(pokemon)
             }
@@ -66,6 +65,20 @@ class PokiControllerTests: XCTestCase {
         XCTAssertEqual(sut.pokemons.count, 20)
     }
     
+    func testControllerFetching40Pokemons(){
+        sut.fetchTwentyPokemons()
+        sut.fetchTwentyPokemons()
+        sleep(1)
+        XCTAssertEqual(sut.pokemons.count, 40)
+    }
+    
+    func testControllerFetching60Pokemons(){
+        sut.fetchTwentyPokemons()
+        sut.fetchTwentyPokemons()
+        sut.fetchTwentyPokemons()
+        sleep(1)
+        XCTAssertEqual(sut.pokemons.count, 60)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.

@@ -34,12 +34,10 @@ class PokiController{
         print(requestURL)
         
         URLSession.shared.dataTask(with: requestURL) { data, response, error in
-            
             if let error = error {
                 print("❌ There was a problem dowloading pokemon. Error: \(error.localizedDescription)")
                 completion(nil)
             }
-            
             do {
                 guard let pokiData = data else {
                     print("❌ Nil poki data for id: \(id)")
@@ -56,6 +54,8 @@ class PokiController{
         }.resume()
     }
     
+    
+    
     var previousPokemonCount = 0
     var pokemonCount = 20
     func fetchTwentyPokemons(){
@@ -65,11 +65,9 @@ class PokiController{
                     self.pokemons.append(pokemon)
                 }
             }
-            previousPokemonCount = pokemonCount
+            previousPokemonCount = pokemonCount + 1
             pokemonCount += 20
         }
-        
-        
     }
     
     
