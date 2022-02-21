@@ -5,6 +5,30 @@
 //  Created by Kamil Wrobel on 2/21/22.
 //
 
+class PokiController{
+    
+    //store Pokemons
+    
+    //fetch Pokemon
+    
+    //fetch Images
+    
+    
+    
+    
+}
+
+struct Poki {
+    let name: String
+    let id: Int
+    let image: PokiImage
+}
+
+struct PokiImage {
+    let image: String //front_shiny : String
+}
+
+
 import XCTest
 @testable import RestAPI_Refresher
 
@@ -18,10 +42,25 @@ class RestAPI_RefresherTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testCreationOfControllerFile(){
+        let sut = PokiController()
+        XCTAssertNotNil(sut, "❌ Controller Class Nil")
     }
+    
+    func testModelExists(){
+        let pokiImage = PokiImage(image: "test")
+        let sut = Poki(name: "test", id: 25, image: pokiImage)
+        XCTAssertNotNil(sut, "❌ Poki Model Nil")
+    }
+    
+    func testPokiImage(){
+        let sut = PokiImage(image: "test")
+        XCTAssertNotNil(sut, "❌ Poki Image is Nil")
+    }
+    
+  
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
